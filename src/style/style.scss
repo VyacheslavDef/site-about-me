@@ -1,0 +1,94 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700;900&display=swap');
+
+body {
+  background: #D1D1D1;
+  
+}
+
+$marginValue: (
+  "8": 8px,
+  "16": 16px,
+  "24": 24px,
+  "32": 32px,
+  "40": 40px,
+  "48": 48px,
+  "50": 50px,
+  "56": 56px,
+  "64": 64px,
+  "72": 72px,
+  "80": 80px,
+);
+
+$marginDirection: (
+  "t": "top",
+  "r": "right",
+  "b": "bottom",
+  "l": "left",
+);
+
+@mixin margin-size($marginV: $marginValue, $marginD: $marginDirection) {
+  @each $mShort, $mLong in $marginD {
+    @each $mVSh, $mV in $marginV {
+      .m#{$mShort}-#{$mVSh} {
+        margin-#{$mLong}: $mV;
+      }
+    }
+  }
+}
+
+.title_text {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.icons {
+  font-size: 30px
+}
+
+@include margin-size($marginValue, $marginDirection);
+
+.d_ib {
+  display: inline-block;
+}
+
+.ta_c {
+  text-align: center;
+}
+
+h1 {
+    font-family: 'Vollkorn', serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 68px;
+}
+
+h2 {
+    font-family: 'Vollkorn', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p {
+    font-size: 20px;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 8px;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+}
