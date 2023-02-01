@@ -10,7 +10,7 @@
 .skills_item_wrapper {
     padding: 16px 32px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #BCC9D1;
+    background: #edecff;
     border-radius: 20px;
 }
 
@@ -38,6 +38,27 @@
     text-align: center;
     margin-bottom: 30px;
 }
+
+.html {
+    color: orangered;
+}
+
+.css {
+    color: blue;
+}
+
+.react {
+    color: blue;
+}
+
+.scss {
+    color: rosybrown;
+}
+
+.js {
+    color: yellow;
+}
+
 
 @media screen and (max-width: 992px) {
 

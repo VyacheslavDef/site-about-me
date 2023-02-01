@@ -6,17 +6,17 @@ const Info = () => {
       <div className="about_info_card">
         <i className="icons uil uil-award-alt"></i>
         <h3>Опыт в IT</h3>
-        <span className="about_span">Более 2ух лет в IT индустрии</span>
+        <span className="about_span">Более года в IT индустрии</span>
       </div>
       <div className="about_info_card">
         <i className="icons uil uil-thumbs-up"></i>
         <h3>Выполнено</h3>
-        <span className="about_span">Более 10 проектов выполено</span>
+        <span className="about_span">10+ проектов выполено</span>
       </div>
       <div className="about_info_card">
-        <i className="icons uil uil-feedback"></i>
-        <h3>Цщкдв</h3>
-        <span className="about_span">Более 10 проектов выполено</span>
+      <i class='icons bx bx-code-alt'></i>
+        <h3>Навыки</h3>
+        <span className="about_span">Каждый день оттачиваю свои навыки</span>
       </div>
     </div>
   );

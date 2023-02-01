@@ -78,8 +78,9 @@ const Contacts = () => {
                 cols="30"
                 rows="10"
               ></textarea>
+                          <button className="button_contacts">Отправить</button>
             </div>
-            <button className="button_contacts">Отправить</button>
+            {/* <button className="button_contacts">Отправить</button> */}
           </form>
         </div>
       </div>

@@ -10,7 +10,7 @@ const Skills = () => {
           <h3 className="text_center">FRONTEND</h3>
           <div className="stroks_items grid">
             <div className="stroke_item">
-              <i className="bx bxl-html5 icons"></i>
+              <i className="bx bxl-html5 icons html"></i>
               <p className="stroke_text">HTML</p>
               <div className="div_skill_stars">
                 <i className="bx bxs-star"></i>
@@ -21,7 +21,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="stroke_item">
-              <i className="bx bxl-css3 icons"></i>
+              <i className="bx bxl-css3 icons css"></i>
               <p className="stroke_text">CSS</p>
               <div className="div_skill_stars">
                 <i className="bx bxs-star"></i>
@@ -32,7 +32,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="stroke_item">
-              <i className="bx bxl-javascript icons"></i>
+              <i className="bx bxl-javascript icons js"></i>
               <p className="stroke_text">JavaScript</p>
               <div className="div_skill_stars">
                 <i className="bx bxs-star"></i>
@@ -43,7 +43,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="stroke_item">
-              <i className="bx bxl-react icons"></i>
+              <i className="bx bxl-react icons react"></i>
               <p className="stroke_text">React</p>
               <div className="div_skill_stars">
                 <i className="bx bxs-star"></i>
@@ -54,7 +54,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="stroke_item">
-              <i className="bx bxl-sass icons"></i>
+              <i className="bx bxl-sass icons scss"></i>
               <p className="stroke_text">SCSS</p>
               <div className="div_skill_stars">
                 <i className="bx bxs-star"></i>
