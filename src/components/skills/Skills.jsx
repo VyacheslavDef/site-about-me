@@ -1,84 +1,22 @@
 import React from "react";
-import "./skills_style.css";
+import SkillsItem from "./SkillsItem";
 
 const Skills = () => {
+  const skillsArray = [
+    {id: 1, icons:"bx bxl-html5 html", name: 'HTML', percent: 90, description: ''},
+    {id: 2, icons:"bx bxl-css3 css", name: 'CSS', percent: 80, description: ''},
+    {id: 3, icons:"bx bxl-sass sass", name: 'SASS', percent: 80, description: ''},
+    {id: 4, icons:"bx bxl-javascript js", name: 'Javascripts', percent: 85, description: ''},
+    {id: 5, icons:"bx bxl-react react", name: 'REACT', percent: 70, description: ''},
+    {id: 6, icons:"bx bxl-git", name: 'GIT', percent: 70, description: ''},
+  ]
   return (
-    <div className="skills_wrapper container">
-      <h2 className="title_text">Skills</h2>
-      <div className="skills_items_wrapper">
-        <div className="skills_item_wrapper">
-          <h3 className="text_center">FRONTEND</h3>
-          <div className="stroks_items grid">
-            <div className="stroke_item">
-              <i className="bx bxl-html5 icons html"></i>
-              <p className="stroke_text">HTML</p>
-              <div className="div_skill_stars">
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star-half"></i>
-              </div>
-            </div>
-            <div className="stroke_item">
-              <i className="bx bxl-css3 icons css"></i>
-              <p className="stroke_text">CSS</p>
-              <div className="div_skill_stars">
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bx-star"></i>
-              </div>
-            </div>
-            <div className="stroke_item">
-              <i className="bx bxl-javascript icons js"></i>
-              <p className="stroke_text">JavaScript</p>
-              <div className="div_skill_stars">
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star-half"></i>
-                <i className="bx bx-star"></i>
-              </div>
-            </div>
-            <div className="stroke_item">
-              <i className="bx bxl-react icons react"></i>
-              <p className="stroke_text">React</p>
-              <div className="div_skill_stars">
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star-half"></i>
-                <i className="bx bx-star"></i>
-              </div>
-            </div>
-            <div className="stroke_item">
-              <i className="bx bxl-sass icons scss"></i>
-              <p className="stroke_text">SCSS</p>
-              <div className="div_skill_stars">
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bx-star"></i>
-              </div>
-            </div>
-            <div className="stroke_item">
-              <i className="bx bxl-git icons"></i>
-              <p className="stroke_text">Git</p>
-              <div className="div_skill_stars">
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bxs-star"></i>
-                <i className="bx bx-star"></i>
-                <i className="bx bx-star"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section className="skills">
+      <h2 className="title_text">Мои профессиональные навыки</h2>
+      <div className="container skills_wrapper grid">
+        {skillsArray.map((x) => <SkillsItem key={x.id} array={x}/>)}
       </div>
-    </div>
+    </section>
   );
 };
 

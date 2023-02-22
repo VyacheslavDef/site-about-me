@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./works_style.css";
 import { port } from "./Data";
 import { portNav } from "./Data";
 import Work from "./Work";
@@ -22,32 +21,41 @@ const Works = () => {
 
   const handleClick = (e, index) => {
     setItem({ name: e.target.textContent });
-    console.log(index)
-    setActive(index)
+    console.log(index);
+    setActive(index);
   };
 
   return (
-    <div className="portfolio_wrapper container">
+    <section className="portfolio">
       <h2 className="title_text">Портфолио</h2>
-      <div className="choise_wrapper mb-24">
-        {portNav.map((item, index) => {
-          return (
-            <span
+      <p className="portfolip_title-name">
+        Мои <span className="font_prim">кейсы:</span>
+      </p>
+      <div className="container portfolio_wrapper">
+        <div className="portfolio_nav_wrapper">
+          {portNav.map((x, index) => (
+            <div
               onClick={(e) => handleClick(e, index)}
-              className={`${active === index ? 'active_choise' : ''} choise_works`}
               key={index}
+              className={`${
+                active === index
+                  ? "portfolio_nav_item active_nav-port"
+                  : "portfolio_nav_item"
+              }`}
             >
-              {item.name}
-            </span>
-          );
-        })}
+              {x.name}
+            </div>
+          ))}
+        </div>
+        <div className="portfolio_items">
+          {project.map((x) => (
+
+              <Work key={x.id} data={x} />
+
+          ))}
+        </div>
       </div>
-      <div className="works_items grid">
-        {project.map((x) => (
-          <Work key={x.id} data={x} />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,86 +1,87 @@
 @import 'reset';
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Jost:wght@400;500;700&display=swap');
+
+//--------------------color----------------//
+$clr-primary: hsl(165, 60%, 40%);
+$clr-title: hsl(0, 0%, 100%);
+$clr-text: hsl(0, 0%, 92%);
+$clr-bg: hsl(216, 18%, 16%);
+$clr-bg-alt: hsl(213, 10%, 21%);
+$clr-container: hsl(217, 18%, 14%);
+$clr-border: hsl(210, 2%, 65%);
+$first-gradient: linear-gradient(
+    0deg,
+    $clr-bg-alt 0%,
+    $clr-bg 100%
+);
+$second-gradient: linear-gradient(
+    180deg,
+    $clr-bg-alt 0%,
+    $clr-bg 100%
+);
+$third-gradient: linear-gradient(
+    180deg,
+    $clr-bg 0%,
+    $clr-bg 100%
+);
+
+//--------------------font----------------//
+$body-font: 'Jost', sans-serif;
+$second-font: 'Caveat', cursive;
+
+@import '../components/main/main_style';
+@import '../components/skills/skills_style';
+@import '../components/works/works_style';
 
 body {
-  background: #D1D1D1;
-  
+    color: $clr-text;
+    background: $clr-bg;
+    font-family: $body-font;
+}
+
+h1,
+h2,
+h3 {
+    color: $clr-title;
+    font-weight: 700;
+};
+
+p {
+    line-height: 1.7;
 }
 
 $marginValue: (
-  "8": 8px,
-  "16": 16px,
-  "24": 24px,
-  "32": 32px,
-  "40": 40px,
-  "48": 48px,
-  "50": 50px,
-  "56": 56px,
-  "64": 64px,
-  "72": 72px,
-  "80": 80px,
+    '8': 8px,
+    '16': 16px,
+    '24': 24px,
+    '32': 32px,
+    '40': 40px,
+    '48': 48px,
+    '50': 50px,
+    '56': 56px,
+    '64': 64px,
+    '72': 72px,
+    '80': 80px,
 );
 
 $marginDirection: (
-  "t": "top",
-  "r": "right",
-  "b": "bottom",
-  "l": "left",
+    't': 'top',
+    'r': 'right',
+    'b': 'bottom',
+    'l': 'left',
 );
 
 @mixin margin-size($marginV: $marginValue, $marginD: $marginDirection) {
-  @each $mShort, $mLong in $marginD {
-    @each $mVSh, $mV in $marginV {
-      .m#{$mShort}-#{$mVSh} {
-        margin-#{$mLong}: $mV;
-      }
+    @each $mShort, $mLong in $marginD {
+        @each $mVSh, $mV in $marginV {
+            .m#{$mShort}-#{$mVSh} {
+                margin-#{$mLong}: $mV;
+            }
+        }
     }
-  }
-}
-
-.title_text {
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.icons {
-  font-size: 30px
 }
 
 @include margin-size($marginValue, $marginDirection);
-
-.d_ib {
-  display: inline-block;
-}
-
-.ta_c {
-  text-align: center;
-}
-
-h1 {
-    font-family: 'Vollkorn', serif;
-    font-weight: 900;
-    font-size: 56px;
-    line-height: 68px;
-}
-
-h2 {
-    font-family: 'Vollkorn', serif;
-    font-weight: 700;
-    font-size: 40px;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-p {
-    font-size: 20px;
-}
-
-.grid {
-    display: grid;
-}
 
 .container {
     max-width: 1200px;
@@ -89,6 +90,56 @@ p {
     padding: 0 8px;
 }
 
-body {
-    font-family: 'Vollkorn', serif;
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 24px;
+    }
+}
+
+.title_text {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 500px) {
+    .title_text {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.icons {
+    font-size: 30px;
+}
+
+.grid {
+    display: grid;
+}
+
+.d_ib {
+    display: inline-block;
+}
+
+.text_c {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 68px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 20px;
 }
