@@ -14,5 +14,6 @@ root.render(
         <Main />
         <Skills/>
         <Works/>
+        <Contacts/>
     </>
 )

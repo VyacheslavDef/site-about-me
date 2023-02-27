@@ -50,7 +50,7 @@
 
 .main_data_two {
     bottom: 12%;
-    left: 50%;
+    left: 55%;
 }
 
 .main_text,
@@ -118,11 +118,11 @@
         position: static;
     }
     .main_data_two {
-        bottom: 15%;
-        left: 50%;
+        bottom: 20%;
+        left: 60%;
     }
     .main_data_one {
-        bottom: 20%;
+        bottom: 30%;
         left: 3%;
     }
     .main_about {
@@ -139,7 +139,7 @@
         font-size: 14px;
     }
     .main_data_two {
-        bottom: 20%;
+        bottom: 25%;
         left: 60%;
     }
     .main_data_one {
@@ -150,22 +150,22 @@
 
 @media screen and (max-width: 576px) {
     .main_data_two {
-        bottom: 20%;
+        bottom: 30%;
         left: 60%;
     }
     .main_data_one {
-        bottom: 25%;
+        bottom: 35%;
         left: 10%;
     }
 }
 
 @media screen and (max-width: 400px) {
     .main_data_two {
-        bottom: 20%;
+        bottom: 38%;
         left: 48%;
     }
     .main_data_one {
-        bottom: 20%;
-        left: 10%;
+        bottom: 42%;
+        left: 8%;
     }
 }

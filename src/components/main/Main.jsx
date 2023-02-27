@@ -11,10 +11,6 @@ const Main = () => {
                 <h1 className="main_title_text">
                     <span className="main_span_prim">Вячеслав </span>Четвертаков
                 </h1>
-                <p className="main_job">
-                    <span className="main_span_prim">Я </span>
-                    <b className="second_font">Frontend разработчик</b>
-                </p>
                 <div className="main_img_wrapper">
                     <div className="main_banner">
                         <img
@@ -34,6 +30,10 @@ const Main = () => {
                       <span className='text_data_sm'>выполнено</span>
                     </p>
                 </div>
+                <p className="main_job">
+                    <span className="main_span_prim">Я </span>
+                    <b className="second_font">Frontend разработчик</b>
+                </p>
                 <p className="main_about">
                     из Москвы. Занимаюсь разработкой web страниц и интерфейсов
                 </p>

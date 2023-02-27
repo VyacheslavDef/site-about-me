@@ -130,7 +130,7 @@ legend {
 
 .main_data_two {
   bottom: 12%;
-  left: 50%;
+  left: 55%;
 }
 
 .main_text,
@@ -193,11 +193,11 @@ legend {
     position: static;
   }
   .main_data_two {
-    bottom: 15%;
-    left: 50%;
+    bottom: 20%;
+    left: 60%;
   }
   .main_data_one {
-    bottom: 20%;
+    bottom: 30%;
     left: 3%;
   }
   .main_about {
@@ -213,7 +213,7 @@ legend {
     font-size: 14px;
   }
   .main_data_two {
-    bottom: 20%;
+    bottom: 25%;
     left: 60%;
   }
   .main_data_one {
@@ -223,22 +223,22 @@ legend {
 }
 @media screen and (max-width: 576px) {
   .main_data_two {
-    bottom: 20%;
+    bottom: 30%;
     left: 60%;
   }
   .main_data_one {
-    bottom: 25%;
+    bottom: 35%;
     left: 10%;
   }
 }
 @media screen and (max-width: 400px) {
   .main_data_two {
-    bottom: 20%;
+    bottom: 38%;
     left: 48%;
   }
   .main_data_one {
-    bottom: 20%;
-    left: 10%;
+    bottom: 42%;
+    left: 8%;
   }
 }
 .skills {
@@ -380,6 +380,11 @@ legend {
     gap: 30px;
   }
 }
+.contacts_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 body {
   color: hsl(0deg, 0%, 92%);
   background: hsl(216deg, 18%, 16%);
@@ -590,10 +595,16 @@ p {
   margin-bottom: 70px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .title_text {
     text-align: center;
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title_text {
+    text-align: center;
+    font-size: 24px;
   }
 }
 .icons {

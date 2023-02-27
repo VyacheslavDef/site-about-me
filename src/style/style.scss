@@ -32,6 +32,7 @@ $second-font: 'Caveat', cursive;
 @import '../components/main/main_style';
 @import '../components/skills/skills_style';
 @import '../components/works/works_style';
+@import '../components/contacts/contacts_style';
 
 body {
     color: $clr-text;
@@ -101,10 +102,17 @@ $marginDirection: (
     margin-bottom: 70px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .title_text {
         text-align: center;
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title_text {
+        text-align: center;
+        font-size: 24px;
     }
 }
 
